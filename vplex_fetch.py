@@ -19,7 +19,7 @@ USERNAME = [service user]
 PASSWORD = [service password]
 VPLEX_IP = [ip address]
 EMAIL_FROM = [storage email]
-EMAIL_TO = 'SidraStorageBackup@sidra.org'
+EMAIL_TO = [team email]
 
 def st_view (clusName):
 	cmd = "curl -k -H \"Username:" + USERNAME + "\" -H \"Password:" + PASSWORD + "\" -s -g -d \'{\"args\":\"/clusters/" + clusName + "/exports/storage-views/\"}\' -X POST https://" + VPLEX_IP + "/vplex/ls"
