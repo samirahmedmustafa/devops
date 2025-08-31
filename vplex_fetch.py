@@ -16,7 +16,7 @@ logging.basicConfig(filename='vplex_fetch.log', level=logging.DEBUG, format=' %(
 logging.debug('Start of %s' % (sys.argv[0]))
 
 USERNAME = [service user]
-PASSWORD = 'Mi@Dim7T'
+PASSWORD = [service password]
 VPLEX_IP = '10.173.223.202'
 EMAIL_FROM = 'storage@sidra.org'
 EMAIL_TO = 'SidraStorageBackup@sidra.org'
