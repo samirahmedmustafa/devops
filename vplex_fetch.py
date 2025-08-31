@@ -15,7 +15,7 @@ from email.mime.text import MIMEText
 logging.basicConfig(filename='vplex_fetch.log', level=logging.DEBUG, format=' %(asctime)s - %(levelname)s - %(message)s')
 logging.debug('Start of %s' % (sys.argv[0]))
 
-USERNAME = 'service'
+USERNAME = [service user]
 PASSWORD = 'Mi@Dim7T'
 VPLEX_IP = '10.173.223.202'
 EMAIL_FROM = 'storage@sidra.org'
