@@ -15,11 +15,11 @@ from email.mime.text import MIMEText
 logging.basicConfig(filename='vplex_fetch.log', level=logging.DEBUG, format=' %(asctime)s - %(levelname)s - %(message)s')
 logging.debug('Start of %s' % (sys.argv[0]))
 
-USERNAME = service_user
-PASSWORD = service_password
-VPLEX_IP = IP_address
-EMAIL_FROM = 'storage@company.com'
-EMAIL_TO = 'teamemail@company.com'
+USERNAME = 'service'
+PASSWORD = 'Mi@Dim7T'
+VPLEX_IP = '10.173.223.202'
+EMAIL_FROM = 'storage@sidra.org'
+EMAIL_TO = 'SidraStorageBackup@sidra.org'
 
 def st_view (clusName):
 	cmd = "curl -k -H \"Username:" + USERNAME + "\" -H \"Password:" + PASSWORD + "\" -s -g -d \'{\"args\":\"/clusters/" + clusName + "/exports/storage-views/\"}\' -X POST https://" + VPLEX_IP + "/vplex/ls"
