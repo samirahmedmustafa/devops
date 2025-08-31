@@ -18,7 +18,7 @@ logging.debug('Start of %s' % (sys.argv[0]))
 USERNAME = [service user]
 PASSWORD = [service password]
 VPLEX_IP = '10.173.223.202'
-EMAIL_FROM = 'storage@sidra.org'
+EMAIL_FROM = [storage email]
 EMAIL_TO = 'SidraStorageBackup@sidra.org'
 
 def st_view (clusName):
