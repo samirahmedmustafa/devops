@@ -11,7 +11,8 @@ from openpyxl.chart import BarChart, Reference
 from openpyxl.chart.marker import DataPoint
 import smtplib
 from email.mime.text import MIMEText
-#logging.disable (logging.CRITICAL)
+logging.disable (logging.CRITICAL)
+
 logging.basicConfig(filename='vplex_fetch.log', level=logging.DEBUG, format=' %(asctime)s - %(levelname)s - %(message)s')
 logging.debug('Start of %s' % (sys.argv[0]))
 
