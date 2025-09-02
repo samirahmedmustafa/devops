@@ -1,8 +1,7 @@
 #!/opt/rh/python33/root/usr/bin/python3
-
+import subprocess
 import sys, os
 import re
-import subprocess
 import json
 import logging
 import openpyxl
@@ -11,7 +10,8 @@ from openpyxl.chart import BarChart, Reference
 from openpyxl.chart.marker import DataPoint
 import smtplib
 from email.mime.text import MIMEText
-#logging.disable (logging.CRITICAL)
+logging.disable (logging.CRITICAL)
+
 logging.basicConfig(filename='vplex_fetch.log', level=logging.DEBUG, format=' %(asctime)s - %(levelname)s - %(message)s')
 logging.debug('Start of %s' % (sys.argv[0]))
 
@@ -19,7 +19,7 @@ USERNAME = [service user]
 PASSWORD = [service password]
 VPLEX_IP = [ip address]
 EMAIL_FROM = [storage email]
-EMAIL_TO = 'SidraStorageBackup@sidra.org'
+EMAIL_TO = [team email]
 
 def st_view (clusName):
 	cmd = "curl -k -H \"Username:" + USERNAME + "\" -H \"Password:" + PASSWORD + "\" -s -g -d \'{\"args\":\"/clusters/" + clusName + "/exports/storage-views/\"}\' -X POST https://" + VPLEX_IP + "/vplex/ls"
