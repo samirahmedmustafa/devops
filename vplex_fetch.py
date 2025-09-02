@@ -1,8 +1,7 @@
 #!/opt/rh/python33/root/usr/bin/python3
-
+import subprocess
 import sys, os
 import re
-import subprocess
 import json
 import logging
 import openpyxl
